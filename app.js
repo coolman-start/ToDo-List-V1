@@ -14,7 +14,7 @@ let items = ["Buy Food", "Cook Food", "Eat Food"]; // array to store item
 let workItems = [];
 //get
 app.get('/', function (req, res) {
-  let day = date();
+  let day = date.getDate();
   res.render("list", { listTitle: day, newListItems: items});
 }); // end of get
 
