@@ -10,8 +10,8 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extend:true}));
 
-let items = ["Buy Food", "Cook Food", "Eat Food"]; // array to store item
-let workItems = [];
+const items = ["Buy Food", "Cook Food", "Eat Food"]; // array to store item
+const workItems = [];
 //get
 app.get('/', function (req, res) {
   let day = date.getDate();
